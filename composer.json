@@ -1,0 +1,24 @@
+{
+    "name": "chatgpt/laravel11-jobboard-scaffold",
+    "description": "Scaffolded Laravel 11 job board app (no vendor included).",
+    "type": "project",
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    }
+}
